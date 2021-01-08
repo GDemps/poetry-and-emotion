@@ -1,0 +1,6 @@
+<h2>Poems</h2>
+<% @poems.each do |poem| %>
+  Title: <%= poem[:title] %><br>
+  Author: <%= poem[:author] %><br>
+  poem: <%= poem[:lines].join(" ,") %><br><br>
+<% end %>
